@@ -6,9 +6,18 @@ import java.util.Date;
 public class User {
  private Long id;
  private String firstName;
- private String LastName;
+ private String lastName;
  private Date date;
  
+public User(User user) {
+	id=user.getId();
+	firstName=user.getFirstName();
+	lastName=user.getLastName();
+	date=user.getDate();
+}
+public User(){
+	
+}
 public Long getId() {
 	return id;
 }
@@ -22,10 +31,10 @@ public void setFirstName(String firstName) {
 	this.firstName = firstName;
 }
 public String getLastName() {
-	return LastName;
+	return lastName;
 }
 public void setLastName(String lastName) {
-	LastName = lastName;
+	this.lastName = lastName;
 }
 public Date getDate() {
 	return date;
