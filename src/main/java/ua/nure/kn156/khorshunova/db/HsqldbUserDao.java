@@ -140,9 +140,10 @@ class HsqldbUserDao implements UserDAO {
 				user.setLastName(resultset.getString("lastname"));
 				user.setDate(resultset.getDate("dateofBith"));
 				collection.add(user);
-				statement.close();
-				connection.close();
 			}
+			resultset.close();
+			statement.close();
+			connection.close();
 		}catch (SQLException e) {
 			throw new DataBaseException(e);
 		}

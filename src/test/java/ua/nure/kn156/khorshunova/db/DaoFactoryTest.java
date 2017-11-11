@@ -15,8 +15,5 @@ public class DaoFactoryTest extends TestCase {
 			  e.printStackTrace();
 	          fail(e.toString());
 		}
-		
-		 
-		
 	}
 }

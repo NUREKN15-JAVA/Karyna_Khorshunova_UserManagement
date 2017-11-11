@@ -15,9 +15,22 @@ public User(User user) {
 	lastName=user.getLastName();
 	date=user.getDate();
 }
-public User(){
-	
+
+public User(String firstName, String lastName, Date date) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.date = date;
 }
+public User(Long id, String firstName, String lastName, Date date) {
+	this.id= id;
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.date = date;
+}
+public User() {
+	// TODO Auto-generated constructor stub
+}
+
 public Long getId() {
 	return id;
 }
@@ -64,5 +77,26 @@ public long getAge(){
 	return age;
 	}
 }
- 
+	
+	public boolean equals(Object o) {
+        if (o == null) {
+            return false;
+        }
+        if (this == o) {
+            return true;
+        }
+        if (this.getId() == null && ((User) o).getId() == null) {
+            return true;
+        }
+        return this.getId().equals(((User) o).getId());
+    }
+	
+     public int hashCode(){
+    	 if(this.getId()==null){
+    		 return 0;
+    	 }
+    	 return this.getId().hashCode();
+     }
 }
+ 
+
