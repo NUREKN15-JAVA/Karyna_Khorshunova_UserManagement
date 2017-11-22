@@ -25,7 +25,7 @@ public class DetailsServlet extends EditServlet {
 
     }
     private void doOk(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/browse").forward(req, resp);
+    	resp.sendRedirect("/browse");
         
     }
 }

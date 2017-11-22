@@ -31,7 +31,7 @@ public class EditServlet extends HttpServlet {
 	}
 
 	private void doCancel(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-		req.getRequestDispatcher("/browse").forward(req, resp);		
+		resp.sendRedirect("/browse");
 	}
 
 	private void doOk(HttpServletRequest req, HttpServletResponse resp)  throws ServletException, IOException {
@@ -49,7 +49,7 @@ public class EditServlet extends HttpServlet {
 			e.printStackTrace();
 			new ServletException(e);
 		}
-	    req.getRequestDispatcher("/browse").forward(req, resp);
+		resp.sendRedirect("/browse");
 		
 	}
 	

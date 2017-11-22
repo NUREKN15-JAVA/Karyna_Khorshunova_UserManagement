@@ -30,21 +30,21 @@
        </target>
 	
 	   <target name="war.exploded" depends="compile">
-	     <!-- скомпилировать все jsp-->
+	     <!-- скопировать все jsp-->
 	     <copy todir="${war-jsp-dir}">
 	   		<fileset dir="${main-webapp-dir}"/>
 	   	 </copy>
-		 <!-- скомпилировать все lib-->
+		 <!-- скопировать все lib-->
 	   	 <copy todir="${war-lib-dir}">
 	   		 <fileset dir="${lib-dir}">
 	   		 	<include name="*.jar"/>
 	   		 </fileset>
 	     </copy>
-		 <!-- скомпилировать все конфиги-->
+		 <!-- скопировать все конфиги-->
 	     <copy todir="${war-classes-dir}">
 	   		 <fileset dir="${main-resources-dir}"/>
 	     </copy>
-		 <!-- скомпилировать все классы-->
+		 <!-- скопировать все классы-->
 	   	 <move file="${build-dir}/ua" todir="${war-classes-dir}"/>
 	   </target>
 	

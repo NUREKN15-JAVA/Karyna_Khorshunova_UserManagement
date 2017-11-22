@@ -10,7 +10,7 @@
    Age: <input type="text" name="lastName" value="${user.age}"><br>
 
         <input type="submit" name="okButton" value="Ok">
- </form>
+    </form>
     <c:if test="${requestScope.error != null}">
         <script>
             alert("${requestScope.error}")
