@@ -10,7 +10,7 @@ import java.util.Properties;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.JLabel;
+//import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -27,9 +27,9 @@ import junit.extensions.jfcunit.finder.ComponentFinder;
 import junit.extensions.jfcunit.finder.NamedComponentFinder;
 import ua.nure.kn156.khorshunova.User;
 import ua.nure.kn156.khorshunova.db.DaoFactory;
-import ua.nure.kn156.khorshunova.db.DaoFactoryImp;
+//import ua.nure.kn156.khorshunova.db.DaoFactoryImp;
 import ua.nure.kn156.khorshunova.db.MockDaoFactory;
-import ua.nure.kn156.khorshunova.db.MockUserDao;
+//import ua.nure.kn156.khorshunova.db.MockUserDao;
 import ua.nure.kn156.khorshunova.util.Messages;
 
 public class MainFrameTest extends JFCTestCase {
