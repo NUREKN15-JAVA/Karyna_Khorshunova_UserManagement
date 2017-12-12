@@ -43,6 +43,12 @@ public interface UserDAO {
      */
  Collection<User> findAll() throws DataBaseException;
     /**
+     * 
+     * @return
+     * @throws DataBaseException
+     */
+ Collection<User> find(String firstName, String lastName) throws DataBaseException;
+    /**
      * Set the connection factory
      * @param connectionFactory the connection factory to use
      */
